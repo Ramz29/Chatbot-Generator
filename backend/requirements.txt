@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+openai
+langchain
+chromadb
+python-dotenv
+pypdf  # Optional if working with PDFs
