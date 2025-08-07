@@ -1,7 +1,4 @@
-from fastapi import FastAPI
-from app.routes import chat, upload
+from app.db.database import engine
+from app.db import models
 
-app = FastAPI()
-
-app.include_router(chat.router)
-app.include_router(upload.router)
+models.Base.metadata.create_all(bind=engine)

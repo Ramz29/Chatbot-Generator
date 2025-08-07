@@ -1,7 +1,12 @@
 fastapi
 uvicorn
-openai
-langchain
-chromadb
+sqlalchemy
+psycopg2-binary
+passlib[bcrypt]
+python-jose[cryptography]
 python-dotenv
-pypdf  # Optional if working with PDFs
+pydantic
+langchain
+openai
+chromadb
+# Optional dependencies for additional features
