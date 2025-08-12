@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 
-router = APIRouter()
+router = APIRouter(prefix="/chat", tags=["Chat"])
 
-@router.post("/chat")
-async def chat():
-    return {"response": "This will use LangChain logic."}
+@router.get("/")
+def test_chat():
+    return {"message": "Chat endpoint works!"}
